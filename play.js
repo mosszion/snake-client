@@ -16,10 +16,7 @@ const connect = function () {
     console.log("Server says: ", data);
   });
 
-  conn.on("connect", () => {
-    conn.write("Hello from client!");
-  });
- 
+  
 
   return conn;
 };
