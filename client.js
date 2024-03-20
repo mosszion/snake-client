@@ -15,7 +15,15 @@ const connect = function () {  //define a function connect
 
   conn.on("data", (data) => {   //display data from the server 
     console.log("Server says: ", data);
+
   });
+
+  conn.on("connect", () => {
+    
+    console.log("Successfully connected to game server")
+  })
+
+  conn.write ("Name: mdz");
 
   
 
