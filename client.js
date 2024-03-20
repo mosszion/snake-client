@@ -24,6 +24,15 @@ const connect = function () {  //define a function connect
   })
 
   conn.write ("Name: mdz");
+  
+  // conn.write ("Move: up");
+ 
+ 
+  let delay = 0;
+  setInterval(() => {
+    
+    conn.write("Move: up")
+  }, delay + 50);
 
   
 
