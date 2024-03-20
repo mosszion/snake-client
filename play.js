@@ -1,11 +1,8 @@
-const connect = require("./client")
+const connect = require("./client")  //import the connect function 
 
-// establishes a connection with the game server
-
+// print this message on the terminal while connecting
 console.log("Connecting ...");
-
-
-connect();
+connect(); //function connect is used
 
 
 

@@ -1,8 +1,8 @@
-const net = require("net");
+const net = require("net");  //import te net object
 
 
-const connect = function () {
-  const conn = net.createConnection({
+const connect = function () {  //define a function connect
+  const conn = net.createConnection({   //creates a connection 
     host:'localhost', // IP address here,
     port: 50541 // PORT number here,
     
@@ -13,13 +13,13 @@ const connect = function () {
   
   //new codes
 
-  conn.on("data", (data) => {
+  conn.on("data", (data) => {   //display data from the server 
     console.log("Server says: ", data);
   });
 
   
 
-  return conn;
+  return conn; 
 };
 
-module.exports = connect;
+module.exports = connect; //exports connect function
