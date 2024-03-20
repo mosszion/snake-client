@@ -39,4 +39,4 @@ const connect = function () {  //define a function connect
   return conn; 
 };
 
-module.exports = connect; //exports connect function
+module.exports = {connect}; //exports connect function
