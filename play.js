@@ -1,10 +1,15 @@
-const {connect} = require("./client")  //import the connect function 
-const {setupInput} = require("./input")  //import the connect function 
+//import setupInput function
+const {setupInput} = require("./input");
 
-// print this message on the terminal while connecting
-console.log("Connecting ...");
-connect(); //function connect is used
+//import connect function from client
 
-setupInput(); //function checks for any inputs
+const {connect} = require ("./client");
 
 
+
+console.log("connecting...");
+
+const a = connect();
+
+
+setupInput(a);
