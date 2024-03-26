@@ -1,11 +1,15 @@
 const net = require ("net");
 const {IP, PORT} = require ("./constants");
 
+
+const port =  PORT;
+const host = IP;
+
 //establishes a connection with the game server
 const connect = function() {
   const conn = net.createConnection({
-     IP,
-     PORT
+     host , 
+     port ,
 
   });
   //interpret incoming data as text
@@ -23,11 +27,7 @@ const connect = function() {
 
   conn.write ("Name: mdz");
 
-
-  conn.write ("Say: lv");
-
-
-  return conn
+  return conn;
 
 };
 
